@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/incident-report-details.css">
+    <link rel="stylesheet" href="/css/bootstrap-icons.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="manifest" href="/manifest.json">
+    <link rel="apple-touch-icon" href="/assets/img/icons/LOGO 96.png">
+    <link rel="app-mobile-web-app-status-bar" href="#9CCD62">
+    <meta name="theme-color" content="#748E54">
+
+    <title>Student OJT Management Student</title>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg fixes-top accent-bg-color">
+        <div class="container ">
+            <div class="d-flex align-items-center justify-content-between w-100">
+              <div class="wrapper">
+                <!-- <div class="d-flex align-items-center">
+                  <a href="" class="navbar-brand fw-bold text-white d-none d-lg-block">SOJTMS</a>
+                </div> -->
+                <!-- <button class="btn 	d-lg-none d-sm-block" type="button " data-bs-toggle="offcanvas" data-bs-target="#sideBar" aria-controls="sideBar">
+                 
+                  <i class="bi bi-arrow-left text-white fs-3"></i>
+                </button> -->
+                <a id="return-button" class="text-decoration-none" href="/pages/incident-report-student.html">
+                    <i class="bi bi-arrow-left text-white fs-3"></i>
+                </a>
+
+              </div>
+
+              <div class="collapse navbar-collapse me-2" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                  <!-- <li class="nav-item">
+                    <a class="nav-link text-light" aria-current="page" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-light" aria-current="page" href="#">Time in/out</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-light" aria-current="page" href="#">History</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-light" aria-current="page" href="#">Reports</a>
+                  </li> -->
+                </ul>
+              </div>
+              <a href="#" id="user-profile" class=" text-decoration-none">
+                <img src="/assets/img/icons8_male_user_480px_1.png" alt="User profile icon" loading="lazy">
+              </a>
+        </div>
+    </nav>
+
+    <!-- <nav class="navbar navbar-expand-lg fixed-top accent-bg-color">
+        <div id="nav-container" class="container d-flex align-items-center justify-content-between w-100 ">
+
+            <div class=" text-white"">
+
+                <a id="return-button" class="text-decoration-none" href="/pages/dashboard.html">
+                    <i class="bi bi-arrow-left fs-3"></i>
+                </a>
+
+                <div class="d-flex align-items-center">
+                    <img class="profile-icon" src="/assets/img/icons8_male_user_480px_1.png" icon" loading="lazy" >
+                    <h3 class="fw-bold "> Last Name, First Name I.</h3>
+                </div>
+                
+            </div>
+
+        </div>
+    </nav> -->
+
+    <!-- History -->
+     <!-- <section class="container mt-2 d-flex flex-column"style="height: calc(100vh - [navbarHeight]px - [otherElementsHeight]px);">
+        <h1 class="fw-bold" style="color: #3C3D42 !important;">INCIDENT REPORTS</h1>
+        <form class="form-floating" method="post" action="">
+            <div class="mb-2">
+                <input type="date" class="form-control" id="incident-search-input" name="history-search-input">
+            </div>
+        </form>
+        
+        <div class="card-container flex-grow-1 overflow-auto">
+            <a href="" class="history-card mb-2" data-bs-toggle="modal" data-bs-target="#viewHistoryModal">
+                <span>MON</span>
+                <span class="separator"></span>
+                <span class="date">March 30, 2024</span>
+            </a>
+        </div>
+
+     </section> -->
+     <section class="incident-report-details container mt-3">
+        <div class="top-bar d-flex justify-content-between align-items-center mb-3">
+            <div>
+                <h6 class="mb-0 fw-bold" style="color: #fff;">Juan A. Dela Cruz J.</h6>
+                <small class="text-white-50">Department of Agrarian Reform</small>
+            </div>
+            <div class="text-end text-white-50">
+                <small>08:12 PM March 21, 2024</small>
+            </div>
+        </div>
+    
+        <div class="incident-card-detail p-4">
+            <h3 class="incident-header mb-3">Header</h3>
+            <hr class="divider" />
+            <div class="incident-body bg-white p-3 rounded-4">
+                <p class="mb-0">Contrary t
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+            </div>
+        </div>
+    </section>
+    
+     <!-- History -->
+
+
+     
+   <!-- view history modal -->
+<div class="modal fade" id="viewHistoryModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="viewHistoryModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content p-3 view-history-modal">
+
+      <div class="d-flex justify-content-end w-100">
+        <i class="bi bi-x-lg fs-6 text-white" data-bs-dismiss="modal" aria-label="Close"></i>
+      </div>
+
+      <div class="history-card-inside w-100 text-center py-3">
+        <span>MORNING</span>
+      </div>
+
+      <div class="history-images">
+        <div>
+          <a href="../assets/img/icons8_full_image_480px_1.png" class="d-flex justify-content-center flex-column align-items-center" target="_blank">
+            <img src="../assets/img/icons8_full_image_480px_1.png" alt="Image 1" class="img-fluid rounded">
+            <h6 class="morning-in" style="color: #F6F8E2;">07:23:11 AM</h6>
+          </a>
+        </div>
+        <div>
+          <a href="../assets/img/icons8_image_480px_1.png" class="d-flex justify-content-center flex-column align-items-center" target="_blank">
+            <img src="../assets/img/icons8_image_480px_1.png" alt="Image 2" class="img-fluid rounded">
+            <h6 class="morning-in" style="color: #F6F8E2;">11:30:21 AM</h6>
+          </a>
+        </div>
+      </div>
+
+      
+      <div class="history-card-inside w-100 text-center py-3">
+        <span>AFTERNOON</span>
+      </div>
+
+      <div class="history-images">
+        <div>
+          <a href="../assets/img/icons8_picture_480px_2.png" class="d-flex justify-content-center flex-column align-items-center" target="_blank">
+            <img src="../assets/img/icons8_picture_480px_2.png" alt="Image 3" class="img-fluid rounded">
+            <h6 class="morning-in" style="color: #F6F8E2;">01:12:41 PM</h6>
+          </a>
+        </div>
+        <div>
+          <a href="../assets/img/icons8_no_image_480px.png" class="d-flex justify-content-center flex-column align-items-center" target="_blank">
+            <img src="../assets/img/icons8_no_image_480px.png" alt="Image 4" class="img-fluid rounded">
+            <h6 class="morning-in" style="color: #F6F8E2;">05:05:12 PM</h6>
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+<!-- view history modal -->
+
+
+    <!-- Side bar -->
+    <div class="offcanvas offcanvas-start primary-background-color" tabindex="-1" id="sideBar" aria-labelledby="sideBarLabel">
+        <div class="offcanvas-header accent-darken-bg-color">
+          <h5 class="offcanvas-title fw-bold text-white" id="sideBarLabel">MENU</h5>
+          <button type="button" class="btn-close " data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body p-0 ">
+            <ul class="nav d-flex flex-column">
+              <li class="nav-item">
+                <a class="nav-link py-3 d-flex align-items-center justify-content-between" aria-current="page" href="#">
+                  <span class="fs-5">Dashboard</span> 
+                  <i class="bi bi-microsoft fs-5"></i>
+                </a>
+              </li>
+              
+              <li class="nav-item">
+                <a class="nav-link py-3 d-flex align-items-center justify-content-between" aria-current="page" href="#">
+                  <span class="fs-5">Time in/out</span> 
+                  <i class="bi bi-clock-fill fs-4"></i>
+                </a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link py-3     d-flex align-items-center justify-content-between" aria-current="page" href="#">
+                  <span class="fs-5">History</span> 
+                  <i class="bi bi-arrow-clockwise fs-3"></i>
+                </a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link py-3 d-flex align-items-center justify-content-between" aria-current="page" href="#">
+                  <span class="fs-5">Report</span> 
+                  <i class="bi bi-printer-fill fs-4"></i>
+                </a>
+              </li>
+            </ul>
+        </div>
+    </div>
+   <!-- Side bar -->
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    <script src="/js/app.js"></script>
+    <script src="/js/ui.js"></script>
+</body>
+</html>

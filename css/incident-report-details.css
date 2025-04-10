@@ -1,0 +1,43 @@
+.incident-report-details {
+    background-color: #F3F4D5; /* Match the background from the screenshot */
+    min-height: 100vh;
+    padding: 1.5rem;
+}
+
+.top-bar {
+    background-color: #8CC63F;
+    padding: 1rem;
+    border-radius: 12px;
+    color: white;
+}
+
+.incident-card-detail {
+    background-color: #ff6e60;
+    border-radius: 20px;
+    color: white;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.incident-header {
+    font-size: 2rem;
+    font-weight: 600;
+    color: white;
+}
+
+.divider {
+    border-color: rgba(255, 255, 255, 0.3);
+}
+
+.incident-body {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    color: #3C3D42;
+}
+
+
+
+
+
+
+
+
