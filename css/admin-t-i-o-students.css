@@ -1,0 +1,350 @@
+html, body {
+    overflow: hidden;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+  }
+
+input {
+    border: none;
+    background-color: #F6F8E2 !important;
+    border-radius: 30px !important;
+    padding:16px 32px !important;
+}
+
+.reports-section {
+    flex: 1;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+  }
+
+.report-card {
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #004E4E;
+}
+
+.report-card {
+    text-decoration: none;
+    font-size: clamp(2rem, 1.5789rem + 2.1053vw, 3rem);
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+.report-card span, .report-content-container p {
+    color: #F6F8E2;
+}
+
+#separator {
+    height: 1px;
+    width: 100%;
+    background-color: #dee2e6;
+    margin: 8px 0;
+}
+
+#date {
+    font-size: clamp(0.625rem, 0.5197rem + 0.5263vw, 0.875rem);
+    font-weight: 400;
+    margin-bottom: 0;
+}
+
+#title {
+    font-size: clamp(1rem, 0.7895rem + 1.0526vw, 1.5rem);
+    font-weight: bold;
+}
+
+.report-content-container p{
+    font-size: clamp(0.75rem, 0.6447rem + 0.5263vw, 1rem);
+    font-weight: 400;
+}
+
+
+.add-search-container button {
+    background-color: #9CCD62;
+    border: none;
+    width: 80px;
+    justify-content: center;
+    padding: 0; 
+}
+
+.add-search-container button i{
+    font-size: 1.5rem !important;
+}
+
+.add-search-container {
+    gap: 0.1rem; 
+}
+
+.form-control {
+    padding: 10px 32px !important;
+}
+
+.add-report-modal, .view-report-modal {
+    border-radius: 20px !important;
+    background-color: #3C3D42 !important;
+}
+.report-title {
+    background-color: #3C3D42 !important;
+    border-bottom: 1px solid #c0c2ca;
+    border-radius: 0 !important;
+    padding: 8px 16px !important;
+    outline: none;
+    color: #F6F8E2;
+}
+
+.report-title::placeholder {
+    color: #d9dae09f;
+}
+
+.report-images  {
+    height: 70px;
+}
+
+.image-container {
+    overflow-x: auto;
+    white-space: nowrap;
+}
+.image-container::-webkit-scrollbar:horizontal {
+    height: clamp(0.0625rem, -0.1217rem + 0.9211vw, 0.5rem);
+}
+.image-container::-webkit-scrollbar-thumb:horizontal {
+    background: #b1adbd;
+    border-radius: 4px;
+}
+
+.image-container img{
+    height: 100%;
+}
+
+
+.add-image-button, .view-image-button {
+    border-radius: 10px;
+    background-color: #9CCD62;
+    transition: all 168ms ease-in-out;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.add-image-button:hover, .view-image-button:hover {
+    background-color: #87b353;
+}
+
+#report-content {
+    height: 100px;
+}
+
+#add-report-button:hover, #view-report-button:hover {
+    background-color: #87b353;
+}
+
+.delete-report-button  {
+    width: unset;
+    width: 20px !important;
+}
+
+#search-input {
+    width: 100%;
+    border-radius: 30px !important;
+    background-color: #F6F8E2 !important;
+}
+
+#search-input label{
+    padding-left: 30px;
+}
+
+#search-input i{
+    padding-right: 20px;
+}
+.curved-border-container {
+    height: 150px;
+    background: url('/assets/img/img_bg.png') no-repeat center center/cover;
+    display: flex;
+    overflow: hidden;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    position: relative;
+}
+
+.card-container {
+    height: calc(100vh - 90px - 205.625px);
+    overflow-y: auto; 
+    padding: 0.5rem;
+}
+
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(60, 61, 66, 0.9); 
+    z-index: 1;
+  }
+
+  .content {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Space between text and button */
+  }
+
+  .text-container {
+    color: white;
+    margin: 0;
+  }
+
+  .text-container h6 {
+    font-size: 1.5rem;
+    margin: 0;
+  }
+
+  .text-container p {
+    color: #F6F8E2;
+    font-size: 0.8rem;
+    margin: 0;
+    padding: 2px 8px;
+    border-radius: 5px;
+  }
+
+  #is-present{
+    background-color: #4caf50;
+  }
+
+  #is-absent{
+    background-color: #f44336;
+  }
+  
+  #is-late{
+    background-color: #ff9800;
+  }
+
+  
+  .incident-report a {
+    background-color: #db2c14;
+    color: #F6F8E2 !important;
+    font-size: 0.8rem;
+    margin: 0;
+    padding: 2px 8px;
+    border-radius: 5px;
+    text-decoration: none;
+  }
+
+  .img-fluid {
+    flex-shrink: 0; 
+  }
+
+  .action-button {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-color: #9CCD62;
+    color: white;
+    border: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .action-button:hover {
+    background-color: #3C3D42;
+  }
+
+.view-button{
+    background-color: #9CCD62;
+    border-radius: 10px;
+    padding: 5px 10px;
+    color: #F6F8E2;
+    transition: all 168ms ease-in-out;
+    cursor: pointer;
+    font-style: normal !important;
+    font-size: small !important;
+}
+
+.students-container{
+    border: #F6F8E2 1px solid;
+    border-radius: 8px;
+    padding: 10px;
+}
+
+
+.view-attendance-modal {
+    max-height: 100vh; 
+    overflow: hidden;
+    display: flex;
+    border-radius: 20px !important;
+    background-color: #3C3D42 !important;
+    padding: 20px;
+    overflow-y: auto; 
+}
+
+.view-attendance-modal::-webkit-scrollbar {
+    width: 8px;
+}
+.view-attendance-modal::-webkit-scrollbar-thumb {
+    background: #b1adbd;
+    border-radius: 4px;
+}
+
+
+.attendance-card-inside {
+    width: 100%;
+    padding: 20px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-size: clamp(2rem, 1.5789rem + 2.1053vw, 3rem);
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.attendance-card-inside span {
+    color: #F6F8E2;
+}
+
+
+.attendance-images {
+    display: flex;
+    justify-content: space-around;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 10px; 
+    justify-items: center; 
+    align-items: center; 
+}
+
+.attendance-images img {
+    width: 100%; 
+    max-width: 100px;
+    height: auto; 
+    max-height: 150px; 
+    object-fit: cover; 
+    border-radius: 10px;
+}
+
+
+@media (max-width: 768px) {
+    .text-container h6 {
+      font-size: 1.0rem;
+      margin: 0;
+    }
+    
+}
+
+
+

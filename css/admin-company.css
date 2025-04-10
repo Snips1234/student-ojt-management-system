@@ -1,0 +1,183 @@
+
+.modal-profile-icon {
+    width: 150px;
+    height: 150px;
+}
+
+.modal {
+    overflow: hidden !important;
+}
+
+.modal-dialog {
+    margin: 0 auto !important;
+    max-height: 100vh !important;
+    display: flex;
+    align-items: center;
+    min-height: calc(100% - 1rem);
+}
+
+.modal-content {
+    max-height: 95vh !important; 
+    overflow: hidden !important;
+}
+
+.modal-body {
+    max-height: calc(100vh - 150px); 
+    padding: 1rem;
+    
+}
+
+.modal-open {
+    overflow: hidden;
+    padding-right: 0 !important;
+}
+
+.add-company-modal, .update-company-modal {
+    background-color: #3C3D42 !important;
+}
+
+#camera-button {
+    width: 100%;
+    background-color: #004e4e;
+    cursor: pointer;
+    border-radius: 10px !important;
+    height: 170px;
+}
+
+#camera-button i {
+    font-size: clamp(2rem, 1.1579rem + 4.2105vw, 4rem);
+}
+
+
+.modal-input h2, .modal-input p{
+    color: var(--accent) !important;
+}
+
+
+.modal-input h2{
+    margin-top: 20px;
+}
+
+.modal-input input{
+    background-color: #3C3D42 !important;
+    box-shadow: none !important;
+    border-color: #FFF;
+    border-radius: 20px!important;
+    color: var(--primary) !important;
+    padding-left: 20px !important;
+    padding-right: 30px !important;
+}
+
+.modal-input input:focus {
+    border-color: #9CCD62 !important; 
+    color: var(--primary) !important;  
+}
+
+.modal-input input:-webkit-autofill {
+    background-color: #3C3D42 !important; 
+    color: var(--primary) !important;
+    -webkit-box-shadow: 0 0 0px 1000px #3C3D42 inset !important; 
+}
+
+.modal-input input:-webkit-autofill:focus {
+    background-color: #3C3D42 !important;
+    color: var(--primary) !important;
+    -webkit-box-shadow: 0 0 0px 1000px #3C3D42 inset !important;
+}
+
+.modal-input input:-webkit-autofill,
+.modal-input input:-webkit-autofill:hover,
+.modal-input input:-webkit-autofill:focus {
+    -webkit-text-fill-color: var(--primary) !important;
+    transition: background-color 5000s ease-in-out 0s;
+}
+
+.modal-input label{
+    color: #FFF !important;
+    font-size: small;
+}
+
+.modal-input:focus-within label {
+    color: #9CCD62 !important;
+}
+
+
+.modal-input h5{
+    color: var(--primary) !important;
+}
+
+.modal-input select {
+    background-color: #3C3D42 !important; 
+    box-shadow: none !important;
+    border-color: #FFF;
+    color: var(--primary) !important;
+    padding-left: 20px !important;
+    padding-right: 30px !important;
+}
+
+.modal-input select:focus {
+    border-color: #9CCD62 !important; 
+    color: var(--primary) !important;  
+}
+
+.modal-input select::-ms-expand {
+    display: none; 
+}
+
+.modal-input select option {
+    background-color: #3C3D42 !important; 
+    color: var(--primary) !important;
+}
+
+#add-company-button, #update-company-button {
+    width: 100%;
+    cursor: pointer;
+    border-radius: 10px !important;
+    height: 50px;
+}
+#add-company-button:hover, #update-company-button:hover {
+    background-color: #4caf50 !important;
+}
+
+i {
+    color: #FFF !important ;
+}
+
+.modal-input:focus-within i {
+    color: #9CCD62 !important;
+}
+
+@media (max-width: 768px) {   
+    .modal {
+        overflow: auto !important; 
+    }
+    
+    .modal-dialog {
+        margin: 0.5rem auto !important; 
+        max-height: none !important;
+        display: block; 
+        align-items: normal;
+        min-height: auto;
+    }
+    
+    .modal-content {
+        max-height: none !important;
+        overflow: visible !important;
+        height: auto;
+    }
+    
+    .modal-body {
+        max-height: none !important;
+        overflow: visible !important;
+    }
+    
+    .modal-open {
+        overflow: auto !important;
+        padding-right: 0 !important;
+    }
+    
+    .modal-dialog {
+        width: 95%;
+        margin: 0.5rem auto !important;
+    }
+}

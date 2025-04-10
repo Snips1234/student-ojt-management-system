@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/admin-t-i-o-company.css">
+    <link rel="stylesheet" href="/css/admin-company.css">
+    <link rel="stylesheet" href="/css/bootstrap-icons.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="manifest" href="/manifest.json">
+    <link rel="manifest" href="/manifest.json">
+    <link rel="apple-touch-icon" href="/assets/img/icons/LOGO 96.png">
+    <link rel="app-mobile-web-app-status-bar" href="#9CCD62">
+    <meta name="theme-color" content="#748E54">
+
+    <title>Student OJT Management Student</title>
+</head>
+<body class="main-container">
+
+    <nav class="navbar navbar-expand-lg fixes-top accent-bg-color sticky-top">
+        <div class="container ">
+            <div class="d-flex align-items-center justify-content-between w-100">
+              <div class="wrapper">
+                <div class="d-flex align-items-center">
+                  <a href="" class="navbar-brand fw-bold text-white d-none d-lg-block">SOJTMS</a>
+                </div>
+                <button class="btn 	d-lg-none d-sm-block" type="button " data-bs-toggle="offcanvas" data-bs-target="#sideBar" aria-controls="sideBar">
+                  <i class="bi bi-list text-light fs-3 outline-none"></i>
+                </button>
+              </div>
+
+              <div class="collapse navbar-collapse me-2" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link text-light" aria-current="page" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-light" aria-current="page" href="#">Time in/out</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-light" aria-current="page" href="#">History</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-light" aria-current="page" href="#">Reports</a>
+                  </li>
+                </ul>
+              </div>
+              <a href="#" id="user-profile" class=" text-decoration-none">
+                <img src="/assets/img/icons8_male_user_480px_1.png" alt="User profile icon" loading="lazy">
+              </a>
+        </div>
+    </nav>
+
+    <!-- Companies -->
+     <section class="container mt-2 d-flex flex-column  .reports-section">
+        <h1 class="fw-bold" style="color: #3C3D42 !important;">COMPANIES</h1>
+
+        <div class="add-search-container d-flex align-items-stretch">
+          <form class="form-floating flex-grow-1 me-2">
+            <div class="search-input position-relative w-100">
+              <i class="bi bi-search position-absolute top-50 end-0 translate-middle me-2"></i>
+              <input type="text" class="form-control py-2" style="height: 58px;" placeholder="Search" >
+            </div>
+          </form>
+          
+          <button class="d-flex align-items-center justify-content-center" style="width: 80px;" data-bs-toggle="modal" data-bs-target="#addCompanyModal">
+            <i class="bi bi-plus-lg"></i>
+          </button>
+        </div>
+        
+        <div class="row card-container mt-2 w-100 align-self-center">   
+
+          <div class="col-lg-4 col-md-6" >
+            <div class=" mb-3 curved-border-container">
+              <div class="overlay"></div>
+              <div class="content">
+                <div class="text-container">
+                  <h6>Department of Agrarian Reform</h6>
+                  <p>Masbate City, Masbate</p>
+                </div>
+                <a class="action-button" data-bs-toggle="modal" data-bs-target="#updateCompanyModal">
+                  <i class="bi bi-pencil"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+     </section>
+     <!-- Companies -->
+
+      <!--  Add Company Modal -->
+    <div class="modal fade" id="addCompanyModal" data-bs-backdrop="static" tabindex="-1" aria-labelledby="addCompanyModal" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+      <div class="modal-content  pe-3 ps-3 add-company-modal">
+          <div class="d-flex justify-content-between pt-4 pe-4 ps-4">
+              <h4 class="modal-title" id="exampleModalLabel">Add Company</h4>
+              <i class="bi bi-x-lg fs-6 text-white" data-bs-dismiss="modal" aria-label="Close"></i>
+          </div>
+          <form id="ojtForm">
+              <div class="modal-body">
+
+                  <div class="row d-flex align-items-center justify-content-center">
+
+                    <div class="col-md-12 d-flex justify-content-center position-relative">
+                      <!-- Camera Button -->
+                      <label for="camera-input" id="camera-button" class="d-flex align-items-center justify-content-center mb-3">
+                        <i class="bi bi-image align-center"></i>
+                      </label>
+                      <input type="file" id="camera-input" accept="image/*" capture="environment" style="display: none;">
+                    </div>
+        
+                      <div class="form-floating col-md-6 mt-3 ps-1 pe-1 position-relative modal-input">
+                          <i class="bi bi-buildings-fill position-absolute top-50 end-0 me-3 translate-middle-y ms-3"></i>
+                          <input type="text" class="form-control ps-3 pe-1" id="company-name name="company-name placeholder="Enter company-name" required>
+                          <label for="company-name">Company Name</label>
+                      </div>
+          
+                      <div class="form-floating col-md-6 mt-3 ps-1 pe-1 position-relative modal-input">
+                          <i class="bi bi-geo-alt-fill position-absolute top-50 end-0 me-3 translate-middle-y ms-3"></i>
+                          <input type="tel" class="form-control ps-3 pe-1" id="company-address" name="company-address" placeholder="Enter company address" required>
+                          <label for="company-address">Company Address</label>
+                      </div>
+                  </div>
+              </div>
+              
+              <div class="d-flex justify-content-center">
+                  <button type="submit" class="mt-2 mb-3 d-block add-company-button" id="add-company-button">
+                      <span>Add Company</span>
+                  </button>
+          
+              </div>
+          </form>
+      </div>
+      </div>
+  </div>
+  <!--  Add Company Modal -->
+
+
+      <!--  Update Company Modal -->
+      <div class="modal fade" id="updateCompanyModal" data-bs-backdrop="static" tabindex="-1" aria-labelledby="updateCompanyModal" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+        <div class="modal-content  pe-3 ps-3 update-company-modal">
+            <div class="d-flex justify-content-between pt-4 pe-4 ps-4">
+                <h4 class="modal-title" id="exampleModalLabel">Update Company</h4>
+                <i class="bi bi-x-lg fs-6 text-white" data-bs-dismiss="modal" aria-label="Close"></i>
+            </div>
+            <form id="ojtForm">
+                <div class="modal-body">
+  
+                    <div class="row d-flex align-items-center justify-content-center">
+  
+                      <div class="col-md-12 d-flex justify-content-center position-relative">
+                        <!-- Camera Button -->
+                        <label for="camera-input" id="camera-button" class="d-flex align-items-center justify-content-center mb-3">
+                          <i class="bi bi-image align-center"></i>
+                        </label>
+                        <input type="file" id="camera-input" accept="image/*" capture="environment" style="display: none;">
+                      </div>
+          
+                        <div class="form-floating col-md-6 mt-3 ps-1 pe-1 position-relative modal-input">
+                            <i class="bi bi-buildings-fill position-absolute top-50 end-0 me-3 translate-middle-y ms-3"></i>
+                            <input type="text" class="form-control ps-3 pe-1" id="company-name name="company-name placeholder="Enter company-name" required>
+                            <label for="company-name">Company Name</label>
+                        </div>
+            
+                        <div class="form-floating col-md-6 mt-3 ps-1 pe-1 position-relative modal-input">
+                            <i class="bi bi-geo-alt-fill position-absolute top-50 end-0 me-3 translate-middle-y ms-3"></i>
+                            <input type="tel" class="form-control ps-3 pe-1" id="company-address" name="company-address" placeholder="Enter company address" required>
+                            <label for="company-address">Company Address</label>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="d-flex justify-content-center">
+                    <button type="submit" class="mt-2 mb-3 d-block update-company-button" id="update-company-button">
+                        <span>Update Company</span>
+                    </button>
+            
+                </div>
+            </form>
+        </div>
+        </div>
+    </div>
+    <!--  Update Company Modal -->
+  
+
+    <!-- Side bar -->
+    <div class="offcanvas offcanvas-start primary-background-color" tabindex="-1" id="sideBar" aria-labelledby="sideBarLabel">
+        <div class="offcanvas-header accent-darken-bg-color">
+          <h5 class="offcanvas-title fw-bold text-white" id="sideBarLabel">MENU</h5>
+          <button type="button" class="btn-close " data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body p-0 ">
+            <ul class="nav d-flex flex-column">
+              <li class="nav-item">
+                <a class="nav-link py-3 d-flex align-items-center justify-content-between" aria-current="page" href="#">
+                  <span class="fs-5">Dashboard</span> 
+                  <i class="bi bi-microsoft fs-5"></i>
+                </a>
+              </li>
+              
+              <li class="nav-item">
+                <a class="nav-link py-3 d-flex align-items-center justify-content-between" aria-current="page" href="#">
+                  <span class="fs-5">Time in/out</span> 
+                  <i class="bi bi-clock-fill fs-4"></i>
+                </a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link py-3     d-flex align-items-center justify-content-between" aria-current="page" href="#">
+                  <span class="fs-5">History</span> 
+                  <i class="bi bi-arrow-clockwise fs-3"></i>
+                </a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link py-3 d-flex align-items-center justify-content-between" aria-current="page" href="#">
+                  <span class="fs-5">Report</span> 
+                  <i class="bi bi-printer-fill fs-4"></i>
+                </a>
+              </li>
+            </ul>
+        </div>
+    </div>
+   <!-- Side bar -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    <script src="/js/app.js"></script>
+    <script src="/js/ui.js"></script>
+</body>
+</html>

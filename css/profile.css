@@ -21,6 +21,22 @@ section{
  margin-top: 180px;
 }
 
+.update-profile {
+    display: flex;
+    align-items: center;
+    border: none;
+    border-radius: 40px !important;
+    outline: none;
+    padding: 8px 28px;
+    background-color: var(--accent);
+    color: var(--primary);
+    font-size: x-small;
+    font-weight: semi-bold;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: all 168ms ease-out;
+  }
+
 
 .form-floating h2, .form-floating p{
     color: var(--accent) !important;
@@ -142,8 +158,9 @@ i {
 }
 
 .modal-body {
-    max-height: calc(95vh - 150px); 
+    max-height: calc(100vh - 150px); 
     padding: 1rem;
+    
 }
 
 .modal-open {
@@ -166,9 +183,6 @@ i {
     background-color: #3C3D42 !important;
 }
 
-.update-profile:hover{
-    background-color: #87b353;
-}
 
 #return-button{
     color: var(--primary) !important;
@@ -230,6 +244,7 @@ input[type="time"]::-webkit-calendar-picker-indicator {
     justify-content: center; 
     align-items: center; 
     width: 100%; 
+    margin-bottom: 20px;
 }
 
 .logout-button:hover {

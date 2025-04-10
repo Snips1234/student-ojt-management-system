@@ -3,9 +3,6 @@ input {
     background-color: #F6F8E2 !important;
     border-radius: 30px !important;
     padding:16px 32px !important;
-    /* box-shadow: 5px 4px 21px -5px rgba(0,0,0,0.2);
-    -webkit-box-shadow: 5px 4px 21px -5px rgba(0,0,0,0.2);
-    -moz-box-shadow: 5px 4px 21px -5px rgba(0,0,0,0.2); */
 }
 
 .history-card {
@@ -39,7 +36,7 @@ input {
 }
 
 .card-container {
-    height: 400px;
+    height: calc(100vh - 90px - 205.625px);
     overflow-y: auto;  
     border-radius: 0.25rem;    
     padding: 0.5rem;   
@@ -114,22 +111,3 @@ input {
 .image-container img{
     height: 100%;
 }
-
-
-.view-history-modal {
-    max-height: 100vh; 
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .history-images {
-    display: flex;
-    justify-content: space-around;
-    gap: 10px;
-  }
-  
-  .history-images img {
-    max-width: 100px;
-    height: auto;
-  }
